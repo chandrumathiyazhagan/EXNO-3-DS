@@ -219,22 +219,23 @@ sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ```
 
-![Uploading Screenshot 2024-04-04 111904.png…]()
+![Screenshot 2024-04-04 111904](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/82a7fdde-7402-4488-9f6b-54955bdb4c31)
+
 
 ```python
 df["Highly Negative Skew_1"]=qt.fit_transform(df[["Highly Negative Skew"]])
 sm.qqplot(df['Highly Negative Skew'],line='45')
 plt.show()
 ```
+![Screenshot 2024-04-04 111909](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/60d6c48c-a27e-490d-9fe6-daefa54d6e28)
 
-![Uploading Screenshot 2024-04-04 111909.png…]()
 
 ```python
 sm.qqplot(df['Highly Negative Skew_1'],line='45')
 plt.show()
 ```
+![Screenshot 2024-04-04 111914](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/aba98554-8b84-4764-9b47-5782eb8ba0b5)
 
-![Uploading Screenshot 2024-04-04 111914.png…]()
 
 
 ## RESULT:
