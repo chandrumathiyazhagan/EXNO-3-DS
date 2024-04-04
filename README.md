@@ -89,18 +89,19 @@ df2
 pd.get_dummies(df2,columns=["nom_0"])
 ```
 
+![Screenshot 2024-04-04 111715](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/4e83a9be-a857-4f1f-ad64-af05e8aa7c26)
 
 ```python
 pip install --upgrade category_encoders
 ```
-
+![Screenshot 2024-04-04 111731](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/32b7c71b-0074-4146-859d-c5c28b043a1d)
 
 ```python
 from category_encoders import BinaryEncoder
 df=pd.read_csv("/content/data.csv")
 df
 ```
-
+![Screenshot 2024-04-04 111738](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/bf69f668-d2c4-4c1b-a97b-15d7375392b1)
 
 ```python
 be=BinaryEncoder()
@@ -109,7 +110,7 @@ dfb=pd.concat([df,nd],axis=1)
 dfb1=df.copy
 dfb
 ```
-
+![Screenshot 2024-04-04 111743](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/64cfba3c-19e9-4001-9df9-e41aa7e2e191)
 
 ```python
 from category_encoders import TargetEncoder
@@ -119,7 +120,7 @@ new=te.fit_transform(X=cc["City"],y=cc["Target"])
 cc=pd.concat([cc,new],axis=1)
 cc
 ```
-
+![Screenshot 2024-04-04 111750](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/6af0bfd3-e44d-4e6c-beda-989c8e4d9ff8)
 
 ```python
 import pandas as pd
@@ -129,7 +130,7 @@ import numpy as np
 df=pd.read_csv("/content/Data_to_Transform.csv")
 df
 ```
-
+![Screenshot 2024-04-04 111756](https://github.com/chandrumathiyazhagan/EXNO-3-DS/assets/119393023/6c1fd9b1-ae34-4025-91f5-4bd7cc0e44b6)
 
 ```python
 df.skew()
